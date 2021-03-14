@@ -86,8 +86,9 @@ transform = Transform( 1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0
 
 [node name="AcceptDialog" type="AcceptDialog" parent="."]
 visible = true
-margin_left = -1.05948
-margin_top = 20.1298
-margin_right = 279.941
-margin_bottom = 174.13
+margin_right = 430.0
+margin_bottom = 217.0
 theme = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
