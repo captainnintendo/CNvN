@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [sub_resource type="CubeMesh" id=6]
 
@@ -49,8 +49,6 @@ func _physics_process(delta):
 
 [sub_resource type="SphereShape" id=4]
 
-[sub_resource type="Theme" id=9]
-
 [node name="Spatial" type="Spatial"]
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
@@ -90,7 +88,6 @@ margin_left = 46.0
 margin_top = 95.0
 margin_right = 652.0
 margin_bottom = 393.0
-theme = SubResource( 9 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
