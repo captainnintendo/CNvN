@@ -1,4 +1,6 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://CNvN.tres" type="Theme" id=1]
 
 [sub_resource type="CubeMesh" id=6]
 
@@ -81,3 +83,11 @@ shape = SubResource( 4 )
 
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( 1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 4.308, 3.3 )
+
+[node name="AcceptDialog" type="AcceptDialog" parent="."]
+visible = true
+margin_left = -1.05948
+margin_top = 20.1298
+margin_right = 279.941
+margin_bottom = 174.13
+theme = ExtResource( 1 )
