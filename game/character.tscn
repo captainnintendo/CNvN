@@ -81,13 +81,3 @@ shape = SubResource( 4 )
 
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( 1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 4.308, 3.3 )
-
-[node name="AcceptDialog" type="AcceptDialog" parent="."]
-visible = true
-margin_left = 46.0
-margin_top = 95.0
-margin_right = 652.0
-margin_bottom = 393.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
