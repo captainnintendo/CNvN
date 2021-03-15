@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://CNvN.tres" type="Theme" id=1]
 
@@ -51,12 +51,6 @@ func _physics_process(delta):
 
 [sub_resource type="SphereShape" id=6]
 
-[sub_resource type="CubeMesh" id=7]
-
-[sub_resource type="Skin" id=8]
-
-[sub_resource type="BoxShape" id=9]
-
 [node name="Spatial" type="Spatial"]
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
@@ -97,14 +91,3 @@ theme = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="SoftBody" type="SoftBody" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.05737, -4.66293 )
-mesh = SubResource( 7 )
-skin = SubResource( 8 )
-material/0 = null
-
-[node name="StaticBody" type="StaticBody" parent="SoftBody"]
-
-[node name="CollisionShape" type="CollisionShape" parent="SoftBody/StaticBody"]
-shape = SubResource( 9 )
