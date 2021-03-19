@@ -16,33 +16,33 @@ action_name = "move_right"
 label_text = "Move Right"
 
 [node name="Label" type="Label" parent="."]
-margin_top = 10.0
-margin_right = 86.0
-margin_bottom = 24.0
+margin_top = 26.0
+margin_right = 289.0
+margin_bottom = 40.0
 size_flags_horizontal = 3
 text = "setting_name"
 
 [node name="Button" type="Button" parent="."]
-margin_left = 90.0
-margin_top = 7.0
-margin_right = 160.0
-margin_bottom = 27.0
+margin_left = 293.0
+margin_top = 23.0
+margin_right = 363.0
+margin_bottom = 43.0
 rect_min_size = Vector2( 35, 0 )
 size_flags_vertical = 4
 text = "gamepad"
 script = ExtResource( 2 )
 
 [node name="PopupPanel" type="PopupPanel" parent="."]
-margin_left = 238.0
-margin_right = 394.0
-margin_bottom = 42.0
+margin_left = 187.0
+margin_right = 363.0
+margin_bottom = 67.0
 popup_exclusive = true
 
 [node name="MarginContainer" type="MarginContainer" parent="PopupPanel"]
 margin_left = 4.0
 margin_top = 4.0
 margin_right = 172.0
-margin_bottom = 38.0
+margin_bottom = 63.0
 custom_constants/margin_right = 10
 custom_constants/margin_top = 10
 custom_constants/margin_left = 10
@@ -53,9 +53,9 @@ __meta__ = {
 
 [node name="Label" type="Label" parent="PopupPanel/MarginContainer"]
 margin_left = 10.0
-margin_top = 10.0
+margin_top = 22.0
 margin_right = 158.0
-margin_bottom = 24.0
+margin_bottom = 36.0
 text = "Press the new button..."
 __meta__ = {
 "_edit_use_anchors_": false
