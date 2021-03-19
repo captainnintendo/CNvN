@@ -1,4 +1,7 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://AcceptDialog.vs" type="Script" id=1]
+[ext_resource path="res://CNvN.tres" type="Theme" id=2]
 
 [sub_resource type="CubeMesh" id=1]
 
@@ -49,9 +52,9 @@ func _physics_process(delta):
 [sub_resource type="SphereMesh" id=5]
 
 [sub_resource type="SpatialMaterial" id=6]
-albedo_color = Color( 0.796078, 0.74902, 0.631373, 1 )
+roughness = 0.0
 rim_enabled = true
-rim = 1.0
+rim = 0.2
 rim_tint = 0.4
 clearcoat_enabled = true
 clearcoat = 1.0
@@ -96,4 +99,22 @@ material/0 = SubResource( 6 )
 shape = SubResource( 8 )
 
 [node name="SpotLight" type="SpotLight" parent="."]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 6.895, 0 )
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 73.534, 0 )
+spot_range = 153.227
+
+[node name="AcceptDialog" type="AcceptDialog" parent="."]
+visible = true
+anchor_left = 0.5
+anchor_top = 0.498
+anchor_right = 0.5
+anchor_bottom = 0.498
+margin_left = -106.648
+margin_top = -67.3746
+margin_right = 95.3518
+margin_bottom = 69.6254
+theme = ExtResource( 2 )
+dialog_text = "You can't access this area."
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
