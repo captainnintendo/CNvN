@@ -59,12 +59,10 @@ func _unhandled_input(event):
 params_diffuse_mode = 4
 params_specular_mode = 3
 albedo_color = Color( 0.882353, 0.733333, 0.611765, 1 )
+roughness = 0.82
 rim_enabled = true
 rim = 0.2
 rim_tint = 0.4
-clearcoat_enabled = true
-clearcoat = 1.0
-clearcoat_gloss = 0.0
 subsurf_scatter_enabled = true
 subsurf_scatter_strength = 1.0
 
