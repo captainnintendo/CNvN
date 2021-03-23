@@ -54,6 +54,11 @@ config/name="Game"
 run/main_scene="res://character.tscn"
 config/icon="res://icon.png"
 
+[debug]
+
+settings/stdout/print_fps=true
+settings/stdout/verbose_stdout=true
+
 [input]
 
 move_forward={
