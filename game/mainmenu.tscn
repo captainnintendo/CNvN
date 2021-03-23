@@ -5,10 +5,12 @@
 [node name="MarginContainer" type="MarginContainer" parent="."]
 margin_right = 1920.0
 margin_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
 custom_constants/margin_right = 128
-custom_constants/margin_top = 128
+custom_constants/margin_top = 64
 custom_constants/margin_left = 128
-custom_constants/margin_bottom = 128
+custom_constants/margin_bottom = 64
 __meta__ = {
 "_edit_use_anchors_": false
 }
