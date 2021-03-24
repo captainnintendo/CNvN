@@ -52,6 +52,7 @@ _global_script_class_icons={
 
 config/name="Game"
 run/main_scene="res://character.tscn"
+boot_splash/image="res://assets/boot/splash.png"
 config/icon="res://icon.png"
 
 [debug]
