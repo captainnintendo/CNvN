@@ -55,16 +55,7 @@ func _unhandled_input(event):
 
 [sub_resource type="SphereMesh" id=5]
 
-[sub_resource type="SpatialMaterial" id=6]
-params_diffuse_mode = 4
-params_specular_mode = 3
-albedo_color = Color( 0.882353, 0.733333, 0.611765, 1 )
-roughness = 0.82
-rim_enabled = true
-rim = 0.2
-rim_tint = 0.4
-subsurf_scatter_enabled = true
-subsurf_scatter_strength = 1.0
+[sub_resource type="Skin" id=11]
 
 [sub_resource type="SphereShape" id=7]
 
@@ -96,7 +87,8 @@ transform = Transform( 1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0
 [node name="MeshInstance" type="MeshInstance" parent="KinematicBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
 mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+skin = SubResource( 11 )
+material/0 = null
 
 [node name="CollisionShape" type="CollisionShape" parent="KinematicBody"]
 shape = SubResource( 7 )
@@ -113,6 +105,8 @@ material/0 = null
 
 [node name="RigidBody" type="RigidBody" parent="MeshInstance2"]
 mode = 1
+mass = 0.00102041
+can_sleep = false
 
 [node name="CollisionShape" type="CollisionShape" parent="MeshInstance2/RigidBody"]
 shape = SubResource( 10 )
