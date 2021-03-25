@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://cnvnlogos/White.png" type="Texture" id=1]
+[ext_resource path="res://CNvN.tres" type="Theme" id=2]
 
 [node name="Node2D" type="Node2D"]
 
@@ -17,7 +18,24 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Polygon2D" type="Polygon2D" parent="MarginContainer"]
+position = Vector2( -107.206, -91.0159 )
+scale = Vector2( 4.63264, 4.63264 )
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 2221.42, -399.619, -651.237, -347.769, -690.86, 1289.75, 2117.75, 1289.75 )
+
 [node name="White" type="Sprite" parent="MarginContainer"]
 position = Vector2( 287.963, 142.936 )
 scale = Vector2( 0.488491, 0.488491 )
 texture = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 63.0
+margin_top = 320.0
+margin_right = 226.0
+margin_bottom = 354.0
+theme = ExtResource( 2 )
+text = "New Game"
+__meta__ = {
+"_edit_use_anchors_": false
+}
