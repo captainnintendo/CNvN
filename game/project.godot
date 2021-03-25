@@ -51,7 +51,7 @@ _global_script_class_icons={
 [application]
 
 config/name="CNvN"
-run/main_scene="res://character.tscn"
+run/main_scene="res://MainMenu.tscn"
 boot_splash/image="res://assets/boot/splash.png"
 boot_splash/bg_color=Color( 0, 0, 0, 1 )
 config/icon="res://assets/icons/CNvN.png"
