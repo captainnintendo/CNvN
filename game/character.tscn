@@ -54,6 +54,14 @@ func _unhandled_input(event):
 		elif event.relative.x < 0:
 			rotate_y(-lerp(0, spin, event.relative.x/10)
 )
+
+func _unhandled_input_joystick(event2):
+	if event2 is InputEventJoypadMotion:
+		if event2.relative.x > 0:
+			rotate_y(-lerp(0, spin, event2.relative.x/10))
+		elif event2.relative.x < 0:
+			rotate_y(-lerp(0, spin, event2.relative.x/10)
+)
 "
 
 [sub_resource type="SphereMesh" id=5]
@@ -90,7 +98,7 @@ keep_aspect = 0
 script = ExtResource( 1 )
 stabilize_horizon = true
 joystick_enabled = false
-action_enabled = false
+action_invert = true
 friction = 0.305
 enable_pitch_limit = true
 pitch_up_limit = 0.75
