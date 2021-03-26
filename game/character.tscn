@@ -1,6 +1,4 @@
-[gd_scene load_steps=12 format=2]
-
-[ext_resource path="res://assets/maujoe.camera_control/scripts/camera_control.gd" type="Script" id=1]
+[gd_scene load_steps=10 format=2]
 
 [sub_resource type="CubeMesh" id=1]
 
@@ -8,53 +6,6 @@
 albedo_color = Color( 0, 0.337255, 0.054902, 1 )
 
 [sub_resource type="BoxShape" id=3]
-
-[sub_resource type="GDScript" id=4]
-script/source = "extends KinematicBody
-
-var gravity = Vector3.DOWN * 12  # strength of gravity
-
-var speed = 5  # movement speed
-
-var jump_speed = 10  # jump strength
-
-var spin = 0.1  # rotation speed
-
-
-var velocity = Vector3()
-var jump = false
-
-func get_input():
-	var vy = velocity.y
-	velocity = Vector3()
-	if Input.is_action_pressed(\"move_forward\"):
-		velocity += -transform.basis.z * speed
-	if Input.is_action_pressed(\"move_back\"):
-		velocity += transform.basis.z * speed
-	if Input.is_action_pressed(\"strafe_right\"):
-		velocity += transform.basis.x * speed
-	if Input.is_action_pressed(\"strafe_left\"):
-		velocity += -transform.basis.x * speed
-	velocity.y = vy
-	jump = false
-	if Input.is_action_just_pressed(\"jump\"):
-		jump = true
-
-func _physics_process(delta):
-	velocity += gravity * delta
-	get_input()
-	velocity = move_and_slide(velocity, Vector3.UP)
-	if jump and is_on_floor():
-		velocity.y = jump_speed
-
-func _unhandled_input(event):
-	if event is InputEventMouseMotion:
-		if event.relative.x > 0:
-			rotate_y(-lerp(0, spin, event.relative.x/10))
-		elif event.relative.x < 0:
-			rotate_y(-lerp(0, spin, event.relative.x/10)
-)
-"
 
 [sub_resource type="SphereMesh" id=5]
 
@@ -82,15 +33,11 @@ shape = SubResource( 3 )
 
 [node name="KinematicBody" type="KinematicBody" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.830485, 0 )
-script = SubResource( 4 )
 
 [node name="Camera" type="Camera" parent="KinematicBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 7 )
 keep_aspect = 0
 doppler_tracking = 1
-script = ExtResource( 1 )
-mouse_mode = 1
-rotate_privot = true
 
 [node name="MeshInstance" type="MeshInstance" parent="KinematicBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
