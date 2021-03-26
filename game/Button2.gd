@@ -1,7 +1,9 @@
 extends Button
 
 func _button_pressed():
-# Remove the current level
-	var level = root.get_node("Level")
-	root.remove_child(level)
-	level.call_deferred("free")
+	var scene_to_load = "res://character.tscn"
+	get_tree().get_current_scene().free()
+	var new_packed_scene = ResourceLoader.load(scene_to_load)
+	var new_scene_instance = new_packed_scene.instance()
+	get_tree().get_root().add_child(new_scene_instance)
+	get_tree().set_current_scene(new_scene_instance)
