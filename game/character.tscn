@@ -85,10 +85,16 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.830485, 0 )
 script = SubResource( 4 )
 
 [node name="TrackballCamera" type="Camera" parent="KinematicBody"]
-transform = Transform( 1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 3.47752, 3.3 )
+transform = Transform( 1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 6, 7 )
+keep_aspect = 0
 script = ExtResource( 1 )
 stabilize_horizon = true
+joystick_enabled = false
+action_enabled = false
 friction = 0.305
+enable_pitch_limit = true
+pitch_up_limit = 0.75
+pitch_down_limit = 0.5
 
 [node name="MeshInstance" type="MeshInstance" parent="KinematicBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
