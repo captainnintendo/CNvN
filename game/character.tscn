@@ -1,4 +1,6 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://addons/goutte.camera.trackball/trackball_camera.gd" type="Script" id=1]
 
 [sub_resource type="CubeMesh" id=1]
 
@@ -50,7 +52,8 @@ func _unhandled_input(event):
 		if event.relative.x > 0:
 			rotate_y(-lerp(0, spin, event.relative.x/10))
 		elif event.relative.x < 0:
-			rotate_y(-lerp(0, spin, event.relative.x/10))
+			rotate_y(-lerp(0, spin, event.relative.x/10)
+)
 "
 
 [sub_resource type="SphereMesh" id=5]
@@ -81,8 +84,11 @@ shape = SubResource( 3 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.830485, 0 )
 script = SubResource( 4 )
 
-[node name="Camera" type="Camera" parent="KinematicBody"]
+[node name="TrackballCamera" type="Camera" parent="KinematicBody"]
 transform = Transform( 1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 3.47752, 3.3 )
+script = ExtResource( 1 )
+stabilize_horizon = true
+friction = 0.305
 
 [node name="MeshInstance" type="MeshInstance" parent="KinematicBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
