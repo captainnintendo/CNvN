@@ -97,6 +97,7 @@ skin = SubResource( 6 )
 material/0 = null
 
 [node name="CollisionShape" type="CollisionShape" parent="KinematicBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.09414, 0 )
 shape = SubResource( 7 )
 
 [node name="SpotLight" type="SpotLight" parent="."]
