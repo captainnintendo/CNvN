@@ -90,6 +90,7 @@ keep_aspect = 0
 doppler_tracking = 1
 script = ExtResource( 1 )
 mouse_mode = 1
+rotate_privot = true
 
 [node name="MeshInstance" type="MeshInstance" parent="KinematicBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
