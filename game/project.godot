@@ -71,7 +71,7 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "goutte.camera.trackball", "orbit_camera" )
+enabled=PoolStringArray( "goutte.camera.trackball" )
 
 [gui]
 
