@@ -38,9 +38,10 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.830485, 0 )
 script = ExtResource( 1 )
 
 [node name="Camera" type="Camera" parent="KinematicBody"]
-transform = Transform( 1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 49.1695, 25 )
+transform = Transform( 1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 40, 49.909 )
 keep_aspect = 0
 doppler_tracking = 1
+projection = 1
 near = 0.02
 far = 8192.0
 
