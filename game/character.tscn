@@ -1,6 +1,7 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://character.tres.gd" type="Script" id=1]
+[ext_resource path="res://assets/sfx/495302__tosha73__big-city-001.ogg" type="AudioStream" id=2]
 
 [sub_resource type="CubeMesh" id=1]
 
@@ -43,6 +44,12 @@ keep_aspect = 0
 doppler_tracking = 1
 near = 0.02
 far = 8192.0
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="KinematicBody/Camera"]
+transform = Transform( 1, 0, 0, 0, 0.996195, -0.0871557, 0, 0.0871557, 0.996195, 0, -4.77584, -9.45221 )
+stream = ExtResource( 2 )
+autoplay = true
+emission_angle_enabled = true
 
 [node name="MeshInstance" type="MeshInstance" parent="KinematicBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
