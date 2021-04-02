@@ -69,10 +69,6 @@ window/size/height=720
 window/dpi/allow_hidpi=true
 window/stretch/aspect="expand"
 
-[editor_plugins]
-
-enabled=PoolStringArray( "goutte.camera.trackball" )
-
 [gui]
 
 theme/use_hidpi=true
