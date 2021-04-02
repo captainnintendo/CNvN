@@ -1,5 +1,5 @@
 # What is CNvN?
-*CNvN* (not final) is a free (forever) fangame based on the characters of Cartoon Network and Nickelodeon.
+*CNvN: The Rise of CHAOS* is a free (forever) fangame based on the characters of Cartoon Network and Nickelodeon.
 This is a fanmade product and I do not intend to infringe copyright nor make money off of it. It is not affilated with WarnerMedia or ViacomCBS. It uses Godot.
 
 ## Plot
