@@ -4,5 +4,6 @@
 resource_name = "Record"
 
 [resource]
+bus/0/volume_db = 4.43127
 bus/0/effect/0/effect = SubResource( 1 )
 bus/0/effect/0/enabled = true
