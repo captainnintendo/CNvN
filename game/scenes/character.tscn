@@ -28,6 +28,12 @@ rings = 128
 
 [node name="Spatial" type="Spatial"]
 
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.29153e-06, -9.53674e-07 )
+stream = ExtResource( 1 )
+autoplay = true
+emission_angle_enabled = true
+
 [node name="MeshInstance" type="MeshInstance" parent="."]
 transform = Transform( 25, 0, 0, 0, 1, 0, 0, 0, 25, 0, -0.042284, 0 )
 mesh = SubResource( 1 )
@@ -48,12 +54,6 @@ keep_aspect = 0
 doppler_tracking = 1
 near = 0.02
 far = 8192.0
-
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="KinematicBody/Camera"]
-transform = Transform( 1, 0, 0, 0, 0.996195, -0.0871557, 0, 0.0871557, 0.996195, 0, -4.77584, -9.45221 )
-stream = ExtResource( 1 )
-autoplay = true
-emission_angle_enabled = true
 
 [node name="MeshInstance" type="MeshInstance" parent="KinematicBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
