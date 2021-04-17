@@ -1,7 +1,7 @@
 [gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://assets/sfx/495302__tosha73__big-city-001.ogg" type="AudioStream" id=1]
-[ext_resource path="res://scenes/Player.gd" type="Script" id=2]
+[ext_resource path="res://scripts/character.tres.gd" type="Script" id=2]
 [ext_resource path="res://scenes/KinematicBody2.gd" type="Script" id=3]
 
 [sub_resource type="CubeMesh" id=1]
