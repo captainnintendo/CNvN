@@ -42,3 +42,11 @@ func _unhandled_input(event):
 		elif event.relative.x < 0:
 			rotate_y(-lerp(0, spin, event.relative.x/10)
 )
+
+func _unhandled_input_joystick(event):
+	if event is InputEventJoypadMotion:
+		if event.relative.x > 0:
+			rotate_y(-lerp(0, spin, event.relative.x/10))
+		elif event.relative.x < 0:
+			rotate_y(-lerp(0, spin, event.relative.x/10)
+)
