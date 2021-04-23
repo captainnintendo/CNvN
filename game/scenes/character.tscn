@@ -50,28 +50,28 @@ material/0 = null
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.17192, 0 )
 shape = SubResource( 13 )
 
-[node name="KinematicBody" type="KinematicBody" parent="."]
+[node name="Player" type="KinematicBody" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
 script = ExtResource( 2 )
 
-[node name="CameraOrbit" type="Camera" parent="KinematicBody"]
+[node name="CameraOrbit" type="Camera" parent="Player"]
 transform = Transform( 1, 0, 0, 0, 0.996195, 0.0871557, 0, -0.0871557, 0.996195, 0, 4.751, 9 )
 keep_aspect = 0
 doppler_tracking = 1
 near = 0.02
 far = 8192.0
 
-[node name="MeshInstance" type="MeshInstance" parent="KinematicBody"]
+[node name="MeshInstance" type="MeshInstance" parent="Player"]
 transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 3.25, 0 )
 mesh = SubResource( 3 )
 skin = SubResource( 4 )
 material/0 = null
 
-[node name="CollisionShape" type="CollisionShape" parent="KinematicBody"]
+[node name="CollisionShape" type="CollisionShape" parent="Player"]
 transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 3.5, 0 )
 shape = SubResource( 5 )
 
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="KinematicBody"]
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Player"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.830481, -9.53674e-07 )
 stream = ExtResource( 1 )
 autoplay = true
