@@ -1,54 +1,57 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://assets/sfx/495302__tosha73__big-city-001.ogg" type="AudioStream" id=1]
 [ext_resource path="res://scripts/character.tres.gd" type="Script" id=2]
 [ext_resource path="res://scenes/KinematicBody2.gd" type="Script" id=3]
 
-[sub_resource type="CubeMesh" id=1]
+[sub_resource type="CylinderMesh" id=1]
+top_radius = 2.0
+bottom_radius = 1.448
+height = 4.395
 
-[sub_resource type="SpatialMaterial" id=2]
-albedo_color = Color( 0, 0.337255, 0.054902, 1 )
+[sub_resource type="CylinderShape" id=13]
+radius = 2.0
+height = 0.06
 
-[sub_resource type="BoxShape" id=3]
+[sub_resource type="CapsuleMesh" id=3]
 
-[sub_resource type="CapsuleMesh" id=4]
+[sub_resource type="Skin" id=4]
 
-[sub_resource type="Skin" id=5]
+[sub_resource type="CapsuleShape" id=5]
 
-[sub_resource type="CapsuleShape" id=6]
+[sub_resource type="CubeMesh" id=6]
 
-[sub_resource type="CubeMesh" id=7]
+[sub_resource type="BoxShape" id=7]
 
-[sub_resource type="BoxShape" id=8]
+[sub_resource type="CubeMesh" id=8]
 
-[sub_resource type="CubeMesh" id=9]
+[sub_resource type="Skin" id=9]
 
-[sub_resource type="Skin" id=10]
+[sub_resource type="BoxShape" id=10]
 
-[sub_resource type="BoxShape" id=11]
-
-[sub_resource type="SpatialMaterial" id=12]
+[sub_resource type="SpatialMaterial" id=11]
 albedo_color = Color( 0.537255, 0.74902, 0.847059, 1 )
 metallic = 1.0
 roughness = 0.21
 
-[sub_resource type="SphereMesh" id=13]
-material = SubResource( 12 )
+[sub_resource type="SphereMesh" id=12]
+material = SubResource( 11 )
 
 [node name="Spatial" type="Spatial"]
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
 transform = Transform( 25, 0, 0, 0, 1, 0, 0, 0, 25, 0, -0.042284, 0 )
 mesh = SubResource( 1 )
-material/0 = SubResource( 2 )
+material/0 = null
 
 [node name="StaticBody" type="StaticBody" parent="MeshInstance"]
 
 [node name="CollisionShape" type="CollisionShape" parent="MeshInstance/StaticBody"]
-shape = SubResource( 3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.17192, 0 )
+shape = SubResource( 13 )
 
 [node name="KinematicBody" type="KinematicBody" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.830485, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
 script = ExtResource( 2 )
 
 [node name="CameraOrbit" type="Camera" parent="KinematicBody"]
@@ -59,14 +62,14 @@ near = 0.02
 far = 8192.0
 
 [node name="MeshInstance" type="MeshInstance" parent="KinematicBody"]
-transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 1.75, 0 )
-mesh = SubResource( 4 )
-skin = SubResource( 5 )
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 3.25, 0 )
+mesh = SubResource( 3 )
+skin = SubResource( 4 )
 material/0 = null
 
 [node name="CollisionShape" type="CollisionShape" parent="KinematicBody"]
-transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 1.5, 0 )
-shape = SubResource( 6 )
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 3.5, 0 )
+shape = SubResource( 5 )
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="KinematicBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.830481, -9.53674e-07 )
@@ -80,13 +83,13 @@ script = ExtResource( 3 )
 
 [node name="MeshInstance" type="MeshInstance" parent="KinematicBody2"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
-mesh = SubResource( 7 )
-skin = SubResource( 5 )
+mesh = SubResource( 6 )
+skin = SubResource( 4 )
 material/0 = null
 
 [node name="CollisionShape" type="CollisionShape" parent="KinematicBody2"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
-shape = SubResource( 8 )
+shape = SubResource( 7 )
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="KinematicBody2"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.830481, -9.53674e-07 )
@@ -100,8 +103,8 @@ spot_range = 153.227
 
 [node name="MeshInstance2" type="MeshInstance" parent="."]
 transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 3.35381, -4.8798 )
-mesh = SubResource( 9 )
-skin = SubResource( 10 )
+mesh = SubResource( 8 )
+skin = SubResource( 9 )
 material/0 = null
 
 [node name="RigidBody" type="RigidBody" parent="MeshInstance2"]
@@ -110,9 +113,9 @@ mass = 0.00102041
 can_sleep = false
 
 [node name="CollisionShape" type="CollisionShape" parent="MeshInstance2/RigidBody"]
-shape = SubResource( 11 )
+shape = SubResource( 10 )
 
 [node name="MeshInstance3" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.31223, -4.95758 )
-mesh = SubResource( 13 )
+mesh = SubResource( 12 )
 material/0 = null
