@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/backtexture.png-c244bf0921417173d7327e256ce3ce5f.s3tc.stex"
-path.etc2="res://.import/backtexture.png-c244bf0921417173d7327e256ce3ce5f.etc2.stex"
+path.s3tc="res://.import/backtexture.png-761dcf6c91d3d82cb5ede5ed49fe6e37.s3tc.stex"
+path.etc2="res://.import/backtexture.png-761dcf6c91d3d82cb5ede5ed49fe6e37.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/models/items/backtexture.png"
-dest_files=[ "res://.import/backtexture.png-c244bf0921417173d7327e256ce3ce5f.s3tc.stex", "res://.import/backtexture.png-c244bf0921417173d7327e256ce3ce5f.etc2.stex" ]
+source_file="res://assets/models/items/pearpad pro/backtexture.png"
+dest_files=[ "res://.import/backtexture.png-761dcf6c91d3d82cb5ede5ed49fe6e37.s3tc.stex", "res://.import/backtexture.png-761dcf6c91d3d82cb5ede5ed49fe6e37.etc2.stex" ]
 
 [params]
 

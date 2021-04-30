@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/the-speaker-grill-2184439_1280.jpg-a2f45dd9e982ac6d17d1f96a5d40e6bf.s3tc.stex"
-path.etc2="res://.import/the-speaker-grill-2184439_1280.jpg-a2f45dd9e982ac6d17d1f96a5d40e6bf.etc2.stex"
+path.s3tc="res://.import/the-speaker-grill-2184439_1280.jpg-e092f39826de4ae62f04b7cb566eddc0.s3tc.stex"
+path.etc2="res://.import/the-speaker-grill-2184439_1280.jpg-e092f39826de4ae62f04b7cb566eddc0.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/models/items/the-speaker-grill-2184439_1280.jpg"
-dest_files=[ "res://.import/the-speaker-grill-2184439_1280.jpg-a2f45dd9e982ac6d17d1f96a5d40e6bf.s3tc.stex", "res://.import/the-speaker-grill-2184439_1280.jpg-a2f45dd9e982ac6d17d1f96a5d40e6bf.etc2.stex" ]
+source_file="res://assets/models/items/pearpad pro/the-speaker-grill-2184439_1280.jpg"
+dest_files=[ "res://.import/the-speaker-grill-2184439_1280.jpg-e092f39826de4ae62f04b7cb566eddc0.s3tc.stex", "res://.import/the-speaker-grill-2184439_1280.jpg-e092f39826de4ae62f04b7cb566eddc0.etc2.stex" ]
 
 [params]
 

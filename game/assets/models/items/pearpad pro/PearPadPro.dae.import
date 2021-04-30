@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/PearPadPro.dae-641202ab59f7cffd292d68ca28fd4ea9.scn"
+path="res://.import/PearPadPro.dae-3aecba276bd32fef1485cae4cec80c47.scn"
 
 [deps]
 
-source_file="res://assets/models/items/PearPadPro.dae"
-dest_files=[ "res://.import/PearPadPro.dae-641202ab59f7cffd292d68ca28fd4ea9.scn" ]
+source_file="res://assets/models/items/pearpad pro/PearPadPro.dae"
+dest_files=[ "res://.import/PearPadPro.dae-3aecba276bd32fef1485cae4cec80c47.scn" ]
 
 [params]
 
