@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Wiki.png-b8ab3ba1a50db79ec86f8dea2984d449.stex"
+path="res://.import/New Globe.png-fb89165dd4e3cf7464be8047ff9a7bf5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://cnvnlogos/Wiki.png"
-dest_files=[ "res://.import/Wiki.png-b8ab3ba1a50db79ec86f8dea2984d449.stex" ]
+source_file="res://assets/cnvnlogos/New Globe.png"
+dest_files=[ "res://.import/New Globe.png-fb89165dd4e3cf7464be8047ff9a7bf5.stex" ]
 
 [params]
 

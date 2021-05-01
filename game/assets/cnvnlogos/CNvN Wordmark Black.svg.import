@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/White.svg-7527d399277908eae6e8c1fa92543c21.stex"
+path="res://.import/CNvN Wordmark Black.svg-3f7f9cca84f8d1bfaec66dd1700d10c1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://cnvnlogos/White.svg"
-dest_files=[ "res://.import/White.svg-7527d399277908eae6e8c1fa92543c21.stex" ]
+source_file="res://assets/cnvnlogos/CNvN Wordmark Black.svg"
+dest_files=[ "res://.import/CNvN Wordmark Black.svg-3f7f9cca84f8d1bfaec66dd1700d10c1.stex" ]
 
 [params]
 

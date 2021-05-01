@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Black.png-14d4fd2fc0901bd4e662f66be176421f.stex"
+path="res://.import/Winter.png-0c9356fb87384e7d7d54430b1b9d9200.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://cnvnlogos/Black.png"
-dest_files=[ "res://.import/Black.png-14d4fd2fc0901bd4e662f66be176421f.stex" ]
+source_file="res://assets/cnvnlogos/holiday icons/Winter.png"
+dest_files=[ "res://.import/Winter.png-0c9356fb87384e7d7d54430b1b9d9200.stex" ]
 
 [params]
 

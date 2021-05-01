@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Black HD.png-29cfd1d0ea0a0b7486e8bfee6b463b94.stex"
+path="res://.import/CNvN Subtitle Black.svg-d6e4287bcc616b7b45e30820d48954ab.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://cnvnlogos/Black HD.png"
-dest_files=[ "res://.import/Black HD.png-29cfd1d0ea0a0b7486e8bfee6b463b94.stex" ]
+source_file="res://assets/cnvnlogos/CNvN Subtitle Black.svg"
+dest_files=[ "res://.import/CNvN Subtitle Black.svg-d6e4287bcc616b7b45e30820d48954ab.stex" ]
 
 [params]
 
