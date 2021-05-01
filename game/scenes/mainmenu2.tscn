@@ -21,16 +21,13 @@ drag_margin_right = 1.0
 drag_margin_bottom = 1.0
 
 [node name="MarginContainer" type="MarginContainer" parent="Camera2D"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 368.908
-margin_top = 182.626
-margin_right = 368.908
-margin_bottom = 182.626
+margin_right = 1280.0
+margin_bottom = 720.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="CNvN Subtitle Rectangle White" type="Sprite" parent="Camera2D/MarginContainer"]
+position = Vector2( 353.554, 149.907 )
 scale = Vector2( 0.462612, 0.462612 )
 texture = ExtResource( 1 )
