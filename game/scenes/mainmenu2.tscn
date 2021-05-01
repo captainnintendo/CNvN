@@ -31,3 +31,13 @@ __meta__ = {
 position = Vector2( 353.554, 149.907 )
 scale = Vector2( 0.462612, 0.462612 )
 texture = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 28.2341
+margin_top = 312.466
+margin_right = 166.234
+margin_bottom = 344.466
+text = "NEW GAME"
+__meta__ = {
+"_edit_use_anchors_": false
+}
