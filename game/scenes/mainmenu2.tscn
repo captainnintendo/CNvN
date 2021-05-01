@@ -15,6 +15,10 @@ __meta__ = {
 offset = Vector2( 640, 360 )
 rotating = true
 current = true
+drag_margin_left = 1.0
+drag_margin_top = 1.0
+drag_margin_right = 1.0
+drag_margin_bottom = 1.0
 
 [node name="MarginContainer" type="MarginContainer" parent="Camera2D"]
 anchor_right = 1.0
