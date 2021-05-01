@@ -12,6 +12,9 @@ __meta__ = {
 }
 
 [node name="Camera2D" type="Camera2D" parent="."]
+offset = Vector2( 640, 360 )
+rotating = true
+current = true
 
 [node name="MarginContainer" type="MarginContainer" parent="Camera2D"]
 anchor_right = 1.0
