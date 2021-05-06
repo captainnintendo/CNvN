@@ -1,9 +1,8 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://assets/sfx/495302__tosha73__big-city-001.ogg" type="AudioStream" id=1]
 [ext_resource path="res://scripts/character.tres.gd" type="Script" id=2]
 [ext_resource path="res://scenes/KinematicBody2.gd" type="Script" id=3]
-[ext_resource path="res://assets/models/items/pearpad pro/PearPadPro.dae" type="PackedScene" id=4]
 
 [sub_resource type="CylinderMesh" id=1]
 top_radius = 2.0
@@ -120,6 +119,3 @@ shape = SubResource( 10 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.31223, -4.95758 )
 mesh = SubResource( 12 )
 material/0 = null
-
-[node name="PearPadPro" parent="MeshInstance3" instance=ExtResource( 4 )]
-transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 10.0128, 0.236041, -17.5091 )
