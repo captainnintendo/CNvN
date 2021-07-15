@@ -1,0 +1,125 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://assets/sfx/495302__tosha73__big-city-001.ogg" type="AudioStream" id=1]
+[ext_resource path="res://scripts/character.tres.gd" type="Script" id=2]
+[ext_resource path="res://scenes/KinematicBody2.gd" type="Script" id=3]
+[ext_resource path="res://assets/models/items/pearpad pro/PearPadPro.dae" type="PackedScene" id=4]
+
+[sub_resource type="CylinderMesh" id=1]
+top_radius = 2.0
+bottom_radius = 1.448
+height = 4.395
+
+[sub_resource type="CylinderShape" id=2]
+radius = 2.0
+height = 0.06
+
+[sub_resource type="CapsuleMesh" id=3]
+
+[sub_resource type="Skin" id=4]
+
+[sub_resource type="CapsuleShape" id=5]
+
+[sub_resource type="CubeMesh" id=6]
+
+[sub_resource type="BoxShape" id=7]
+
+[sub_resource type="CubeMesh" id=8]
+
+[sub_resource type="Skin" id=9]
+
+[sub_resource type="BoxShape" id=10]
+
+[sub_resource type="SpatialMaterial" id=11]
+albedo_color = Color( 0.537255, 0.74902, 0.847059, 1 )
+metallic = 1.0
+roughness = 0.21
+
+[sub_resource type="SphereMesh" id=12]
+material = SubResource( 11 )
+
+[node name="Spatial" type="Spatial"]
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 25, 0, 0, 0, 1, 0, 0, 0, 25, 0, -0.042284, 0 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="MeshInstance"]
+
+[node name="CollisionShape" type="CollisionShape" parent="MeshInstance/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.26038, 0 )
+shape = SubResource( 2 )
+
+[node name="Player" type="KinematicBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+script = ExtResource( 2 )
+
+[node name="CameraOrbit" type="Camera" parent="Player"]
+transform = Transform( 1, 0, 0, 0, 0.996195, 0.0871557, 0, -0.0871557, 0.996195, 0, 4.751, 9 )
+keep_aspect = 0
+doppler_tracking = 1
+near = 0.02
+far = 8192.0
+
+[node name="MeshInstance" type="MeshInstance" parent="Player"]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 3.25, 0 )
+mesh = SubResource( 3 )
+skin = SubResource( 4 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Player"]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 3.5, 0 )
+shape = SubResource( 5 )
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Player"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.830481, -9.53674e-07 )
+stream = ExtResource( 1 )
+autoplay = true
+emission_angle_enabled = true
+
+[node name="KinematicBody2" type="KinematicBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.4811, 0.830485, 0 )
+script = ExtResource( 3 )
+
+[node name="MeshInstance" type="MeshInstance" parent="KinematicBody2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+mesh = SubResource( 6 )
+skin = SubResource( 4 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="KinematicBody2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+shape = SubResource( 7 )
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="KinematicBody2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.830481, -9.53674e-07 )
+stream = ExtResource( 1 )
+autoplay = true
+emission_angle_enabled = true
+
+[node name="SpotLight" type="SpotLight" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 73.534, 0 )
+spot_range = 153.227
+
+[node name="MeshInstance2" type="MeshInstance" parent="."]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 3.35381, -4.8798 )
+mesh = SubResource( 8 )
+skin = SubResource( 9 )
+material/0 = null
+
+[node name="RigidBody" type="RigidBody" parent="MeshInstance2"]
+mode = 1
+mass = 0.00102041
+can_sleep = false
+
+[node name="CollisionShape" type="CollisionShape" parent="MeshInstance2/RigidBody"]
+shape = SubResource( 10 )
+
+[node name="MeshInstance3" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.31223, -4.95758 )
+mesh = SubResource( 12 )
+material/0 = null
+
+[node name="PearPadPro" parent="MeshInstance3" instance=ExtResource( 4 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 10.0128, 0.236041, -17.5091 )
