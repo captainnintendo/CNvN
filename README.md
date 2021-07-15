@@ -1,4 +1,4 @@
-<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/w/captainnintendo/CNvN?color=%23ff6700&logo=github&logoColor=white&style=for-the-badge">
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/captainnintendo/CNvN?logo=github&style=for-the-badge">
 
 
 
