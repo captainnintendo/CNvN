@@ -1,3 +1,2 @@
-USOG Dev Stats
-Started: March 12, 2021
-Revamped: May 6, 2021
+CNvN Dev Stats
+Stared: March 12, 2021
