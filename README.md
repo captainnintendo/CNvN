@@ -7,7 +7,7 @@
 This is a fanmade product and I do not intend to infringe copyright nor make money off of it. It is not affiliated with WarnerMedia or ViacomCBS. It uses Godot.
 
 ## Plot
-When an evil emperor named Chaos takes over the worlds of CN and Nick characters, it's up to them to stop Chaos in this epic crossover event!
+When an evil emperor named Chaos enslaves the multiverse and plans to suck it into the Void, it's up to CN & Nick characters, reimagined in a new style, to team up and defeat Chaos and the foes he's teamed up with!
 
 ## When will it release?
 Development has started since March 12, 2020, and it has no set release date yet.
