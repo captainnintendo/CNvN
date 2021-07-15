@@ -1,4 +1,4 @@
-<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/captainnintendo/CNvN?logo=github&style=for-the-badge">
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/captainnintendo/CNvN?logo=github&style=for-the-badge"> <img alt="Discord" src="https://img.shields.io/discord/725118938597294151?color=5865F2&label=discord&logo=discord&logoColor=white&style=for-the-badge"> 
 
 
 
